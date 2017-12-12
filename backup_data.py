@@ -33,7 +33,7 @@ def backup_xxdata():
 
 def run():
     backup_xxdata()
-    mysqldump("127.0.0.1", "root", "admin", "monitoring")
+    mysqldump("127.0.0.1", "root", "@WSX3edc", "monitoring")
 
 if __name__ == '__main__':
     run()
