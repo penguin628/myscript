@@ -27,7 +27,7 @@ def mysqldump(host, user, password, database_name, port=3306, skipdata=False):
 
 
 def backup_xxdata():
-    shell_str = 'find /home/jie/xxdata -name "*.zip" -mtime -700 | xargs -I {} scp {} /home/jie/xxdata_backup/'
+    shell_str = 'find /root/zsz/xxdata -name "*.zip" -mtime -700 | xargs -I {} scp {} /home/jie/xxdata_backup/'
     os.system(shell_str)
 
 
